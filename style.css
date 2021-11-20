@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+:root {
+    --dark-background: #1F2937;
+    --darker-background: #171e29;
+    --quote-background: #E5E7EB;
+    --quote-fontcolor: #1F2937;
+    --quote-fontsize: 36px;
+    --button-color: #3882F6;
+    --title-fontsize: 48px;
+    --title-fontweight: 800;
+    --title-fontcolor: #F9FAF8;
+    --header-fontcolor: #E5E7EB;
+    --header-fontsize: 12px;
+    --button-fontsize: 18px;
+    --logo-fontsize: 24px;
+    --container-width: 800px;
+    --mini-container-width: 700px;
+    --portrait-size: 128px;
+    /* --information-fontcolor:#1F2937; */
+    --information-fontweight: bold;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    /* overflow: hidden; */
+    font-family: Roboto, sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* height: 100vh; */
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.block {
+    width: var(--container-width);
+}
+
+.miniblock {
+    width: var(--mini-container-width);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+}
+
+#banner1 .container {
+    height: 400px;
+}
+
+button {
+    font-size: var(--button-fontsize);
+    font-weight: var(--information-fontweight);
+    color: var(--title-fontcolor);
+    background: var(--button-color);
+    border: 0px;
+    width: 128px;
+    border-radius: 5px;
+}
+
+button:hover {
+    transform: translate(1px, 1px);
+    /* border: 1px solid black; */
+    /* font-weight: var(--title-fontweight); */
+    background: var(--title-fontcolor);
+    color: var(--button-color);
+}
+
+#btn-bot {
+    border: 2px solid var(--title-fontcolor);
+}
+
+#bnt-top {
+    margin-top: auto;
+    align-items: flex-end;
+}
+
+#banner1 {
+    background: var(--dark-background);
+    color: var(--header-fontcolor);
+}
+
+.signup-block {
+    background: var(--button-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 100px 10px 100px;
+    width: var(--container-width);
+    height: 128px;
+    box-sizing: border-box;
+}
+
+.signup-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.signup-title {
+    font-size: var(--logo-fontsize);
+    font-weight: var(--title-fontweight);
+    color: var(--title-fontcolor);
+}
+
+.signup-text {
+    font-size: var(--header-fontsize);
+    color: var(--header-fontcolor);
+}
+
+.signup-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.figure-logo {
+    border-radius: 10px;
+    border: 3px solid var(--darker-background);
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.portrait:hover {
+    transform: scale(1.05, 1.05) translate(10px, 3px);
+    /* transform: translateX(2px) translateY(-2px); */
+}
+
+.figure-logo img {
+    height: 300px;
+    /* width: 300px; */
+}
+
+.figure-block {
+    display: flex;
+}
+
+
+/* <div class="signup-block">
+    <div class="signup-info">
+        <div class="signup-title"> Call to actions! it's time!</div>
+        <div class="signup-title"> Sign up for our product by clicking the fucking button faggot. </div>
+    </div>
+    <div class="signup-button">
+        <button id="btn-bot"> Sign up </button>
+    </div>
+</div> */
+
+#title {
+    margin: 0px;
+    font-size: var(--title-fontsize);
+    font-weight: var(--title-fontweight);
+    color: var(--title-fontcolor);
+}
+
+.top-banner-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.title-block {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+#banner2 .container {
+    justify-content: space-around;
+}
+
+.information-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 75%;
+    gap: 50px;
+    align-items: center;
+}
+
+.information-title {
+    margin: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: var(--title-fontweight);
+    color: var(--quote-fontcolor);
+}
+
+.information-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    flex: 1 0 auto;
+    /* gap: 64px; */
+    color: var(--quote-fontcolor);
+    /* margin-bottom: auto; */
+}
+
+.information-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--header-fontsize);
+    font-weight: bold;
+    width: var(--portrait-size);
+    gap: 8px;
+}
+
+.information-content img {
+    height: 164px;
+}
+
+.information-content .figure-portrait {
+    /* border: 3px solid var(--button-color); */
+    border: 3px solid var(--dark-background);
+    border-radius: 16px;
+    height: var(--portrait-size);
+    width: var(--portrait-size);
+    overflow: hidden;
+}
+
+
+/* <div class="information-block">
+    <div id="information-title"> Reach our staff </div>
+    <div id="information-bar">
+        <div class="information-content">
+            <img src="big_dolphin.jpg" alt="" width="150px">
+        </div>
+        <div class="information-content">
+            <img src="big_dolphin.jpg" alt="" width="150px">
+        </div>
+        <div class="information-content">
+            <img src="big_dolphin.jpg" alt="" width="150px">
+        </div>
+        <div class="information-content">
+            <img src="big_dolphin.jpg" alt="" width="150px">
+        </div>
+    </div>
+</div>
+</div> */
+
+#banner3 {
+    background: var(--quote-background);
+    line-height: 0px;
+}
+
+.quote-cite {
+    line-height: 48px;
+    font-family: 'Bad Script', cursive;
+    font-size: var(--quote-fontsize);
+    color: var(--quote-fontcolor);
+    font-style: italic;
+}
+
+.quote-cite:hover {
+    transform: translate(1px, -1px);
+}
+
+.quote-person {
+    font-size: var(--button-fontsize);
+    font-weight: var(--information-fontweight);
+    margin-left: auto;
+    padding-left: 50px;
+    margin-top: -16px;
+}
+
+
+/* footer {
+} */
+
+header,
+footer {
+    background: var(--dark-background);
+    color: var(--header-fontcolor);
+    font-size: var(--header-fontsize);
+}
+
+#header,
+#footer {
+    display: flex;
+    flex-direction: row;
+}
+
+#footer {
+    justify-content: center;
+}
+
+#header {
+    height: 48px;
+    justify-content: space-between;
+    align-items: top;
+    padding: 10px;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-weight: var(--information-fontweight);
+}
+
+.logo {
+    font-weight: var(--title-fontweight);
+    font-size: var(--logo-fontsize);
+    color: var(--title-fontcolor)
+}
+
+a:link {
+    text-decoration: inherit;
+    color: inherit;
+    /* cursor: auto; */
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    /* cursor: auto; */
+}
